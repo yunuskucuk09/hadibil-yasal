@@ -26,7 +26,12 @@ ol li{margin:6px 0}.kart h2{margin-top:2px}
   var PLAY = "https://play.google.com/store/apps/details?id=app.hadibil", IOS = "";
   var k = ''; try { k = (new URLSearchParams(location.search).get('davet') || '').toLowerCase(); } catch (e) {}
   if (!/^[a-z0-9._]{3,15}$/.test(k)) k = '';
-  var play = k ? PLAY + '&referrer=' + encodeURIComponent('davet=' + k) : PLAY;
+  // Sosyal medya bağlantıları kaynak taşır (?k=instagram): Play'e referrer olarak geçer, uygulama kimliksiz sayar
+  var kay = ''; try { kay = (new URLSearchParams(location.search).get('k') || '').toLowerCase(); } catch (e) {}
+  if (!/^[a-z_]{2,24}$/.test(kay)) kay = '';
+  var ref = [k ? 'davet=' + k : '', kay ? 'kaynak=' + kay : ''].filter(Boolean).join('&');
+  var play = ref ? PLAY + '&referrer=' + encodeURIComponent(ref) : PLAY;
+  if (kay && IOS) IOS += (IOS.indexOf('?') < 0 ? '?' : '&') + 'ct=' + kay;
   document.getElementById('play').href = play;
   var ua = navigator.userAgent || '', ios = /iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && 'ontouchend' in document);
   if (k) { var d = document.getElementById('davet'); d.hidden = false; d.textContent = 'Davet eden: ' + k + (ios ? ' · uygulamayı kurunca Arkadaşlar ekranındaki “Seni biri mi davet etti?” bölümüne bu adı yaz.' : ''); }
