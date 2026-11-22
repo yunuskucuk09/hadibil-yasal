@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "app.hadibil",
+      "sha256_cert_fingerprints": [
+        "AC:34:D0:E2:D4:A3:12:6D:2B:A8:01:DD:72:6A:45:5D:6B:4A:7A:5A:D7:F8:E8:E2:4D:86:80:DB:E2:06:A0:CC",
+        "04:52:A6:65:96:95:F7:BD:00:5D:88:DD:BF:AA:45:E6:C2:0E:A4:E5:35:B5:97:D9:80:13:D8:58:15:35:FA:5F"
+      ]
+    }
+  }
+]

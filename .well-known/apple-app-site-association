@@ -1,0 +1,25 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "CWY668893W.app.hadibil"
+        ],
+        "components": [
+          {
+            "/": "/indir.html",
+            "?": {
+              "oda": "?*"
+            }
+          },
+          {
+            "/": "/indir.html",
+            "?": {
+              "grup": "?*"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
