@@ -1,5 +1,5 @@
-// Hadi Bil web · ağ önce, ağ yoksa önbellek (sürüm 202611221009)
-const ONB = 'hadibil-web-202611221009';
+// Hadi Bil web · ağ önce, ağ yoksa önbellek (sürüm 202611221048)
+const ONB = 'hadibil-web-202611221048';
 self.addEventListener('install', (e) => { self.skipWaiting(); });
 self.addEventListener('activate', (e) => { e.waitUntil(caches.keys().then((k) => Promise.all(k.filter((x) => x !== ONB).map((x) => caches.delete(x)))).then(() => self.clients.claim())); });
 self.addEventListener('fetch', (e) => {
