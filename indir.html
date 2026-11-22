@@ -18,6 +18,7 @@ ol li{margin:6px 0}.kart h2{margin-top:2px}
 <div class="kart"><p>Bilgi yarışması: düellolar, ligler, sınav soruları. Ücretsiz.</p>
 <p id="davet" class="not" hidden></p>
 <p id="oda" hidden style="margin-top:10px"><strong>Oda kodu: <span id="odakod"></span></strong><br><a id="ac" href="#" style="display:inline-block;margin-top:10px;padding:12px 18px;border-radius:12px;background:#FF8A3D;color:#16123A;text-decoration:none;font-weight:800">Uygulamada odayı aç</a><br><span class="not">Uygulama yüklü değilse önce indir; açınca Özel oda › Odaya katıl’a bu kodu yaz.</span></p>
+<p id="grup" hidden style="margin-top:10px"><strong>Grup kodu: <span id="grupkod"></span></strong><br><a id="gac" href="#" style="display:inline-block;margin-top:10px;padding:12px 18px;border-radius:12px;background:#FF8A3D;color:#16123A;text-decoration:none;font-weight:800">Uygulamada gruba katıl</a><br><span class="not">Uygulama yüklü değilse önce indir; Android’de kurunca gruba kendiliğinden katılırsın, iPhone’da Grup › Davet koduyla katıl’a bu kodu yaz.</span></p>
 <p style="display:flex;flex-wrap:wrap;gap:10px;margin-top:14px">
 <a id="play" href="https://play.google.com/store/apps/details?id=app.hadibil" style="padding:12px 18px;border-radius:12px;background:#16123A;color:#fff;text-decoration:none;font-weight:700">Google Play’den indir</a>
 <a id="ios" href="#" style="padding:12px 18px;border-radius:12px;background:#5B3DF5;color:#fff;text-decoration:none;font-weight:700">iPhone · yakında</a>
@@ -30,7 +31,10 @@ ol li{margin:6px 0}.kart h2{margin-top:2px}
   // Sosyal medya bağlantıları kaynak taşır (?k=instagram): Play'e referrer olarak geçer, uygulama kimliksiz sayar
   var kay = ''; try { kay = (new URLSearchParams(location.search).get('k') || '').toLowerCase(); } catch (e) {}
   if (!/^[a-z_]{2,24}$/.test(kay)) kay = '';
-  var ref = [k ? 'davet=' + k : '', kay ? 'kaynak=' + kay : ''].filter(Boolean).join('&');
+  // Grup daveti (?grup=HB-1234): kod Play kurulum bilgisine de yazılır, Android'de kurup hesap açınca gruba kendiliğinden katılınır
+  var grup = ''; try { grup = (new URLSearchParams(location.search).get('grup') || '').trim(); } catch (e) {}
+  if (!/^[A-Z0-9ÇĞİÖŞÜ]{1,5}-?[0-9]{4}$/.test(grup)) grup = '';
+  var ref = [k ? 'davet=' + k : '', kay ? 'kaynak=' + kay : '', grup ? 'grup=' + encodeURIComponent(grup) : ''].filter(Boolean).join('&');
   var play = ref ? PLAY + '&referrer=' + encodeURIComponent(ref) : PLAY;
   if (kay && IOS) IOS += (IOS.indexOf('?') < 0 ? '?' : '&') + 'ct=' + kay;
   document.getElementById('play').href = play;
@@ -46,6 +50,13 @@ ol li{margin:6px 0}.kart h2{margin-top:2px}
     document.getElementById('oda').hidden = false; document.getElementById('odakod').textContent = oda; document.getElementById('ac').href = uyg;
     if (/Android/i.test(ua)) { location.replace('intent://oda/' + oda + '#Intent;scheme=hadibil;package=app.hadibil;S.browser_fallback_url=' + encodeURIComponent(play) + ';end'); return; }
     if (ios) { location.href = uyg; if (IOS) setTimeout(function () { if (!document.hidden) location.replace(IOS); }, 1800); return; }
+    return;
+  }
+  if (grup) {
+    var gu = 'hadibil://grup/' + encodeURIComponent(grup);
+    document.getElementById('grup').hidden = false; document.getElementById('grupkod').textContent = grup; document.getElementById('gac').href = gu;
+    if (/Android/i.test(ua)) { location.replace('intent://grup/' + encodeURIComponent(grup) + '#Intent;scheme=hadibil;package=app.hadibil;S.browser_fallback_url=' + encodeURIComponent(play) + ';end'); return; }
+    if (ios) { location.href = gu; if (IOS) setTimeout(function () { if (!document.hidden) location.replace(IOS); }, 1800); return; }
     return;
   }
   if (/Android/i.test(ua)) location.replace(play);
