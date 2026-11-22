@@ -87,8 +87,8 @@ img{max-width:100%;display:block}
 .etiketler{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 0;padding:0;list-style:none}
 .etiketler li{font-weight:700;font-size:14px;padding:7px 12px;border-radius:999px;background:#fff;border:1px solid var(--cizgi)}
 .lig{display:flex;flex-wrap:wrap;gap:6px;margin:18px 0 0;padding:0;list-style:none;counter-reset:l}
-.lig li{display:flex;align-items:center;gap:8px;font-weight:800;font-size:14px;padding:8px 12px 8px 8px;border-radius:12px;background:#fff;border:1px solid var(--cizgi)}
-.lig li span{width:18px;height:18px;border-radius:6px;background:var(--r)}
+.lig li{display:flex;align-items:center;gap:8px;font-weight:800;font-size:14px;padding:6px 12px 6px 8px;border-radius:12px;background:#fff;border:1px solid var(--cizgi)}
+.lig li .amb{display:block;width:26px;height:26px;flex-shrink:0;overflow:visible}
 .geri{font:800 22px/1 var(--bas);color:var(--turuncu2);margin:6px 0 14px}
 /* Sınavlar */
 .koyu{background:var(--gece);color:#fff}
