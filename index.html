@@ -1,20 +1,174 @@
 <!doctype html>
 <html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Yasal · Hadi Bil</title>
-<style>
-:root{--bg:#F4F2FB;--kart:#FFFFFF;--yazi:#16123A;--soluk:#5E5A7A;--ana:#5B3DF5;--cizgi:#E7E4F2}
-@media (prefers-color-scheme: dark){:root{--bg:#120E30;--kart:#1C1745;--yazi:#F4F2FB;--soluk:#C9C4E8;--ana:#A897FF;--cizgi:#2E2860}}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--yazi);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
-main{max-width:760px;margin:0 auto;padding:24px 16px 64px}header{display:flex;align-items:center;gap:10px;margin-bottom:8px}
-.logo{width:36px;height:36px;border-radius:10px;background:#5B3DF5;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800}
-nav{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 20px}nav a{padding:6px 12px;border-radius:999px;background:var(--kart);border:1px solid var(--cizgi);color:var(--yazi);text-decoration:none;font-size:14px;font-weight:600}
-h1{font-size:28px;line-height:1.2;margin:8px 0}h2{font-size:19px;margin:28px 0 6px}p{margin:6px 0}.not{color:var(--soluk);font-size:14px}
-.kart{background:var(--kart);border:1px solid var(--cizgi);border-radius:16px;padding:16px 18px;margin:14px 0}a{color:var(--ana)}
-ol li{margin:6px 0}.kart h2{margin-top:2px}
-</style></head><body><main>
-<header><div class="logo">?</div><strong>Hadi Bil</strong></header>
-<nav><a href="./">Ana sayfa</a><a href="gizlilik.html">Gizlilik</a><a href="kosullar.html">Kullanım Koşulları</a><a href="acik-riza.html">Açık Rıza</a><a href="hesap-silme.html">Hesap silme</a></nav>
-<h1>Hadi Bil · yasal metinler</h1><div class="kart"><p>Hadi Bil, Ayşegül Küçük tarafından geliştirilen bir bilgi yarışması uygulamasıdır.</p><p>İletişim: <a href="mailto:hadibilapp@gmail.com">hadibilapp@gmail.com</a></p></div>
-<ul><li><a href="gizlilik.html">Gizlilik Politikası ve KVKK Aydınlatma Metni</a></li><li><a href="kosullar.html">Kullanım Koşulları</a></li><li><a href="acik-riza.html">Açık Rıza Metni</a></li><li><a href="hesap-silme.html">Hesap ve veri silme</a></li></ul>
-<p class="not">Sürüm 2.2 · Son güncelleme: 21 Kasım 2026</p>
-</main></body></html>
+<title>Hadi Bil · Bilgi yarışması: düello, canlı yarış, Arena ve sınav soruları</title>
+<meta name="description" content="Arkadaşlarınla ya da Türkiye’nin dört bir yanından oyuncularla bilgi yarıştır. 65.000’den fazla soru, bire bir düello, canlı yarış, her akşam Arena ve KPSS, YKS, LGS, ÖABT dahil 24 sınavın soruları. Ücretsiz; webde de oyna.">
+<link rel="canonical" href="https://hadibilapp.com.tr/">
+<meta name="theme-color" content="#16123A">
+<link rel="icon" type="image/png" sizes="192x192" href="ikon-192.png"><link rel="apple-touch-icon" href="ikon-180.png">
+<meta property="og:type" content="website"><meta property="og:locale" content="tr_TR"><meta property="og:site_name" content="Hadi Bil">
+<meta property="og:title" content="Hadi Bil · Bugün kimi geçiyoruz?"><meta property="og:description" content="Arkadaşlarınla ya da Türkiye’nin dört bir yanından oyuncularla bilgi yarıştır. 65.000’den fazla soru, bire bir düello, canlı yarış, her akşam Arena ve KPSS, YKS, LGS, ÖABT dahil 24 sınavın soruları. Ücretsiz; webde de oyna.">
+<meta property="og:url" content="https://hadibilapp.com.tr/"><meta property="og:image" content="https://hadibilapp.com.tr/og.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://hadibilapp.com.tr/og.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap">
+<link rel="stylesheet" href="site.css">
+
+</head><body>
+<a class="atla" href="#icerik">İçeriğe geç</a>
+<header class="ust"><div class="sar">
+<a class="marka" href="./"><img src="ikon-192.png" alt="" width="38" height="38">hadi bil</a>
+<nav aria-label="Site"><a href="/#modlar">Modlar</a><a href="/#sinavlar">Sınavlar</a><a href="/#sss">SSS</a><a href="/#destek">Destek</a><a class="oyna" href="oyna/">Webde oyna</a></nav>
+</div></header>
+<main id="icerik">
+<section class="kah" aria-labelledby="kah-bas">
+<div class="sar">
+<div>
+<h1 id="kah-bas">Bugün kimi geçiyoruz?</h1>
+<p class="giris">Hadi Bil, arkadaşlarınla ya da Türkiye’nin dört bir yanından oyuncularla bilgi yarıştırdığın ücretsiz bir oyun. 65.000’den fazla soru, bire bir düello, canlı yarış ve her akşam 20:00’de Arena.</p>
+<div class="dugmeler">
+<a class="dug dug-ana" href="oyna/">Webde oyna</a>
+<a class="dug dug-koyu" id="k-play" href="https://play.google.com/store/apps/details?id=app.hadibil"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path fill="#34A853" d="M3.6 2.3 13.4 12l-9.8 9.7c-.4-.2-.6-.6-.6-1.1V3.4c0-.5.2-.9.6-1.1z"/><path fill="#FBBC04" d="m16.7 8.7-3.3 3.3 3.3 3.3 3.8-2.1c1.1-.6 1.1-1.8 0-2.4z"/><path fill="#4285F4" d="M3.6 2.3c.3-.2.8-.2 1.2 0l11.9 6.4-3.3 3.3z"/><path fill="#EA4335" d="M13.4 12l3.3 3.3-11.9 6.4c-.4.2-.9.2-1.2 0z"/></svg><span class="iki"><small>İndir</small>Google Play</span></a>
+<a class="dug dug-koyu" id="k-ios" href="#" aria-disabled="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M16.4 12.6c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.9-3.5.9-.7 0-1.8-.8-3-.8-1.6 0-3 .9-3.8 2.3-1.6 2.8-.4 6.9 1.2 9.1.8 1.1 1.7 2.3 2.9 2.3 1.2 0 1.6-.7 3-.7s1.8.7 3 .7c1.3 0 2.1-1.1 2.8-2.2.9-1.3 1.3-2.5 1.3-2.6-.1 0-2.5-.9-2.5-3.7zM14.2 5.8c.6-.8 1.1-1.8 1-2.8-.9 0-2 .6-2.7 1.4-.6.7-1.1 1.7-1 2.7 1 .1 2-.5 2.7-1.3z"/></svg><span class="iki"><small>Çok yakında</small>App Store</span></a>
+</div>
+<p class="not">Telefondaki hesabınla webde de oynayabilirsin.</p>
+</div>
+<div class="soru" id="soru" aria-live="polite">
+<div class="soru-ust"><span class="kat" id="s-kat">TARİH</span><span class="ad">Günün sorusu</span>
+<div class="halka" aria-hidden="true"><svg width="52" height="52" viewBox="0 0 52 52"><circle cx="26" cy="26" r="22" fill="none" stroke="#EEEBFA" stroke-width="6"/><circle id="s-halka" cx="26" cy="26" r="22" fill="none" stroke="#FF8A3D" stroke-width="6" stroke-linecap="round" stroke-dasharray="138.2" stroke-dashoffset="0"/></svg><b id="s-sure">20</b></div></div>
+<h2 id="s-metin">Kartacalı hangi komutan filleriyle birlikte Alpler’i aşarak İtalya’ya girmiştir?</h2>
+<div class="siklar" id="s-siklar"><button class="sik" type="button"><i>A</i><span>Hannibal</span></button><button class="sik" type="button"><i>B</i><span>Hamilkar</span></button><button class="sik" type="button"><i>C</i><span>Scipio</span></button><button class="sik" type="button"><i>D</i><span>Spartaküs</span></button></div>
+<div class="sonuc" id="s-sonuc"><p id="s-not"></p><div class="alt"><button class="dug dug-acik" type="button" id="s-yeni">Bir soru daha</button><a class="dug dug-ana" href="oyna/">Webde rakip bul</a></div></div>
+<noscript><p class="not">Soruyu cevaplamak için JavaScript’i aç ya da <a href="oyna/">webde oyna</a>.</p></noscript>
+</div>
+</div>
+</section>
+
+<section class="bol" id="modlar" aria-labelledby="modlar-bas"><div class="sar">
+<h2 class="bas" id="modlar-bas">Dört şekilde yarış</h2>
+<p class="ac">Her maçta aynı soruları rakibinle aynı anda çözersin. Doğru bilmek yetmez: hızlı olan ve zor soruyu bilen daha çok puan alır.</p>
+
+<article class="mod">
+<div><h3>Bire bir düello</h3>
+<p>Rastgele bir rakiple ya da arkadaşınla 10 soru. Konuyu sen seçersin: tarih, spor, sinema, müzik ya da bir sınavın soruları. Rakibin o an çevrimiçi değilse önce sen oynarsın, o sonra oynar; sonuç bildirimle gelir.</p>
+<p>Zorlandığın soruda jokerini kullan: yarı yarıya, seyirci, uzman görüşü, çift cevap, ek süre. Her joker maçta bir kez.</p>
+<ul class="etiketler"><li>10 soru</li><li>Soru başına 20 saniye</li><li>Rövanş tek dokunuşla</li></ul></div>
+<div class="tel"><img src="ekran-3.webp" alt="Düello ekranında bir soru: iki oyuncunun puanı ve geri sayım" width="520" height="1013" loading="lazy" decoding="async"></div>
+</article>
+
+<article class="mod">
+<div><h3>Canlı yarış ve özel oda</h3>
+<p>Hızlı yarışta başka oyuncularla aynı anda, aynı soruya cevap verirsin; canlı sıralamada kimin öne geçtiğini anında görürsün.</p>
+<p>Özel oda kur, kodu ya da QR’ı arkadaşlarına gönder; kategoriyi ve soru sayısını sen seç. Davet bağlantısına dokunan doğrudan odana gelir. Maç sonunda sonucunu kimlerle oynadığınla birlikte paylaş.</p>
+<ul class="etiketler"><li>Sınıfta, evde, yolda</li><li>Oda kodu ve QR</li><li>Aynı odada rövanş</li></ul></div>
+<div class="tel"><img src="ekran-4.webp" alt="Canlı yarış: oyuncuların sıralaması ve soru" width="520" height="1013" loading="lazy" decoding="async"></div>
+</article>
+
+<article class="mod">
+<div><h3>Akşam Arenası</h3>
+<p class="geri" id="arena-geri">Her akşam 20:00’de</p>
+<p>100 kişiye kadar oyuncu aynı anda 50 soruya başlar. Tek yanlışta elenirsin; son kalan kazanır. Sorular herkese aynı, kolaydan zora dizilir.</p>
+<ul class="etiketler"><li>50 soru</li><li>Tek yanlışta elenme</li><li>Arena jokerleri</li></ul></div>
+<div class="tel"><img src="ekran-5.webp" alt="Akşam Arenası ekranı: geri sayım ve dolan grup" width="520" height="1013" loading="lazy" decoding="async"></div>
+</article>
+
+<article class="mod">
+<div><h3>Haftalık lig</h3>
+<p>Maçlardan kazandığın puanlarla haftalık odanda yarışırsın. Hafta pazartesiye geçerken kapanır, odanın ilk sıraları bir üst lige çıkar. Sıralamada yalnızca maçlarda kazanılan puan sayılır; puan satın alınamaz.</p>
+<ol class="lig" aria-label="Ligler, en alttan en üste"><li style="--r:#C77B4A"><span aria-hidden="true"></span>Bakır</li><li style="--r:#A8743F"><span aria-hidden="true"></span>Bronz</li><li style="--r:#B9BCC7"><span aria-hidden="true"></span>Gümüş</li><li style="--r:#F5B82E"><span aria-hidden="true"></span>Altın</li><li style="--r:#2BB673"><span aria-hidden="true"></span>Zümrüt</li><li style="--r:#D93A5B"><span aria-hidden="true"></span>Yakut</li><li style="--r:#7FD3F5"><span aria-hidden="true"></span>Elmas</li><li style="--r:#5B3DF5"><span aria-hidden="true"></span>Efsane</li></ol></div>
+<div class="tel"><img src="ekran-1.webp" alt="Ana sayfa: günlük görevler ve Akşam Arenası" width="520" height="1013" loading="lazy" decoding="async"></div>
+</article>
+</div></section>
+
+<section class="bol koyu" id="sinavlar" aria-labelledby="sinav-bas"><div class="sar">
+<h2 class="bas" id="sinav-bas">24 sınava hazırlan, oynayarak</h2>
+<p class="ac">KPSS’den LGS’ye, ÖABT’den TUS’a sınav soruları da burada. Toplam 65.022 soru, her birinin açıklamasıyla.</p>
+<div class="sinav-alt">
+<div>
+<ul class="yap">
+<li>Gerçek sınavın soru dağılımı ve süresiyle deneme çöz; istersen yalnızca seçtiğin derslerin denemesine gir.</li>
+<li>Yanlış yaptığın sorular Yanlışlarım’a eklenir; tekrar planı hangi gün neyi çalışacağını söyler.</li>
+<li>Hedef sınavını seç: kalan gün ve günlük hedefin ana sayfanda.</li>
+<li>Sınav düellosuyla aynı sınava hazırlanan biriyle yarış.</li>
+</ul>
+<ul class="sinavlar"><li><b>KPSS GY-GK</b><span>3.185 soru</span></li><li><b>KPSS A Grubu</b><span>1.333 soru</span></li><li><b>ÖABT · 17 alan</b><span>17.148 soru</span></li><li><b>TYT ve MSÜ</b><span>5.431 soru</span></li><li><b>AYT</b><span>4.531 soru</span></li><li><b>LGS</b><span>4.467 soru</span></li><li><b>ALES</b><span>1.902 soru</span></li><li><b>DGS</b><span>1.905 soru</span></li><li><b>MEB-AGS</b><span>3.623 soru</span></li><li><b>YDS ve YDT</b><span>1.168 soru</span></li><li><b>TUS</b><span>1.248 soru</span></li><li><b>DUS</b><span>1.290 soru</span></li><li><b>Ehliyet</b><span>1.244 soru</span></li><li><b>İSG</b><span>595 soru</span></li><li><b>SRC</b><span>489 soru</span></li><li><b>ÖGG</b><span>500 soru</span></li><li><b>SEGEM</b><span>560 soru</span></li><li><b>SPL</b><span>630 soru</span></li><li><b>Hâkimlik</b><span>570 soru</span></li><li><b>YÖS</b><span>500 soru</span></li><li><b>IELTS</b><span>553 soru</span></li><li><b>TOEFL</b><span>710 soru</span></li><li><b>SAT</b><span>625 soru</span></li></ul>
+</div>
+<div class="tel"><img src="ekran-6.webp" alt="Kendi başına çalış: konu ve sınav seçimi" width="520" height="1013" loading="lazy" decoding="async"></div>
+</div>
+</div></section>
+
+<section class="bol" aria-labelledby="aksam-bas"><div class="sar">
+<div class="her-aksam">
+<div class="saat" aria-hidden="true">19:17</div>
+<div><h2 id="aksam-bas">Her akşam 19:17’de günün sorusu</h2>
+<p>Sosyal medya hesaplarımızda her akşam yeni bir soru: 5 saniyen var. Cevabı ertesi gün açıklıyoruz.</p>
+<div class="sos"><a href="https://www.instagram.com/hadibilapp"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>Instagram</a><a href="https://www.tiktok.com/@hadibilapp"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M16.5 3c.3 2.2 1.6 3.6 3.8 3.8v3.1c-1.3.1-2.5-.3-3.7-1v6.2c0 3.6-3 6-6.2 5.8-3.6-.3-5.9-3.6-5.1-7 .6-2.6 3-4.4 5.7-4.2v3.2c-1.3-.3-2.7.4-3 1.7-.4 1.4.6 2.9 2.1 3 1.5.1 2.7-1 2.7-2.6V3h3.7z"/></svg>TikTok</a><a href="https://www.youtube.com/@hadibilapp"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M22 8.2c-.2-1.6-1-2.7-2.6-2.9C16.9 5 12 5 12 5s-4.9 0-7.4.3C3 5.5 2.2 6.6 2 8.2 1.8 9.5 1.8 12 1.8 12s0 2.5.2 3.8c.2 1.6 1 2.7 2.6 2.9 2.5.3 7.4.3 7.4.3s4.9 0 7.4-.3c1.6-.2 2.4-1.3 2.6-2.9.2-1.3.2-3.8.2-3.8s0-2.5-.2-3.8zM10 15.2V8.8l5.6 3.2-5.6 3.2z"/></svg>YouTube</a></div></div>
+</div>
+</div></section>
+
+<section class="bol" id="sss" aria-labelledby="sss-bas" style="padding-top:0"><div class="sar">
+<h2 class="bas" id="sss-bas">Sık sorulanlar</h2>
+<div class="sss"><details><summary>Hadi Bil ücretsiz mi?</summary><p>Evet. Hadi Bil’i indirmek ve oynamak ücretsiz; uygulama reklam içerir. İstersen uygulama içinden jeton paketi alabilir ya da reklamsız oynamak, her gün jeton kazanmak ve sınırsız deneme çözmek için Plus’a geçebilirsin. Oyunda gerçek para ya da para değeri olan ödül kazanılmaz.</p></details><details><summary>Bilgisayardan oynayabilir miyim?</summary><p>Evet, <a href="oyna/">hadibilapp.com.tr/oyna</a> adresinden tarayıcıda oynayabilirsin; telefonda ana ekrana da ekleyebilirsin. Webde satın alma yok, jeton ve Plus yalnızca uygulamadan alınır; aldıkların webde de geçerli olur.</p></details><details><summary>Telefondaki hesabımla webden girebilir miyim?</summary><p>Hesabına Google bağlıysan evet: webde “Google ile devam et” ile gir, ilerlemen aynen gelir. Hesabın aynı anda tek cihazda açık kalır; webden girince telefondaki oturumun kapanır. Yalnızca Apple ile girdiysen önce uygulamada Hesap ekranından Google’ı bağla.</p></details><details><summary>Sınav soruları resmî mi?</summary><p>Hayır. Hadi Bil bağımsız bir uygulamadır; ÖSYM, MEB ya da başka bir resmî kurumla bağlantısı yoktur. Sorular sınavların konu ve formatına uygun olarak özgün hazırlanır, her sorunun açıklaması vardır.</p></details><details><summary>Kaç yaşında oynanır?</summary><p>13 yaş ve üstü. 13–17 yaş arasındaki oyuncular için genç modu kendiliğinden açılır: gerçek ad diğer oyunculara gösterilmez, kişiselleştirilmiş reklam gösterilmez ve harcama sınırı uygulanır.</p></details><details><summary>Plus nedir, nasıl iptal edilir?</summary><p>Plus aylık ya da yıllık bir abonelik: reklamsız oyun, her gün jeton, düelloda günde 2 bedava joker, sınırsız deneme ve ders istatistiği. Aylık Plus ilk kez 7 gün ücretsiz denenebilir. İptal için Android’de Google Play › Ödemeler ve abonelikler › Abonelikler’e, iPhone’da Ayarlar › adın › Abonelikler’e git.</p></details><details><summary>Hesabımı nasıl silerim?</summary><p>Uygulamada profil › Hesap ve gizlilik › Hesabımı sil. Uygulamaya giremiyorsan <a href="hesap-silme.html">hesap silme sayfasındaki</a> adımları izle. 30 gün içinde vazgeçebilirsin.</p></details><details><summary>Bir soruda hata buldum, ne yapmalıyım?</summary><p>Soru ekranındaki bayrak simgesine dokunup hatayı seç; editörlerimiz bakar ve soruyu düzeltir. İstersen <a href="mailto:hadibilapp@gmail.com">hadibilapp@gmail.com</a> adresine de yazabilirsin.</p></details></div>
+</div></section>
+
+<section class="bol" id="destek" aria-labelledby="destek-bas" style="padding-top:0"><div class="sar">
+<div class="destek">
+<div><h2 id="destek-bas">Bir sorun mu var?</h2>
+<p>Uygulamada Profil › Hesap ve gizlilik › Sorun bildir ya da öneri gönder’den yazabilirsin; yanıtımız uygulamaya gelir. Uygulamaya giremiyorsan e-posta gönder.</p></div>
+<a class="dug" href="mailto:hadibilapp@gmail.com?subject=Hadi%20Bil%20destek">hadibilapp@gmail.com</a>
+</div>
+</div></section>
+</main>
+<footer class="alt-bilgi"><div class="sar">
+<div><a class="marka" href="./" style="margin-bottom:14px"><img src="ikon-192.png" alt="" width="38" height="38">hadi bil</a>
+<p style="margin:0;max-width:30em">Arkadaşlarınla ve Türkiye’nin dört bir yanından oyuncularla bilgi yarıştırdığın ücretsiz oyun. Hadi Bil’i Ayşegül Küçük geliştiriyor.</p></div>
+<div><h3>Oyun</h3><ul><li><a href="oyna/">Webde oyna</a></li><li><a href="https://play.google.com/store/apps/details?id=app.hadibil">Google Play</a></li><li><a href="./#destek">Destek</a></li><li><a href="mailto:hadibilapp@gmail.com">hadibilapp@gmail.com</a></li></ul>
+<h3 style="margin-top:22px">Bizi takip et</h3><ul><li><a href="https://www.instagram.com/hadibilapp">Instagram</a></li><li><a href="https://www.tiktok.com/@hadibilapp">TikTok</a></li><li><a href="https://www.youtube.com/@hadibilapp">YouTube</a></li></ul></div>
+<div><h3>Yasal</h3><ul><li><a href="gizlilik.html">Gizlilik ve KVKK</a></li><li><a href="kosullar.html">Kullanım Koşulları</a></li><li><a href="acik-riza.html">Açık Rıza Metni</a></li><li><a href="hesap-silme.html">Hesap ve veri silme</a></li></ul></div>
+<p class="kucuk">Hadi Bil bağımsız bir uygulamadır; ÖSYM, MEB ya da başka bir resmî kurumla bağlantısı yoktur. Sorular sınav formatında özgün olarak hazırlanmıştır. © 2026 Hadi Bil</p>
+</div></footer>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"MobileApplication","name":"Hadi Bil","operatingSystem":"Android, iOS, Web","applicationCategory":"GameApplication","inLanguage":"tr","url":"https://hadibilapp.com.tr/","downloadUrl":"https://play.google.com/store/apps/details?id=app.hadibil","image":"https://hadibilapp.com.tr/og.png","description":"Bilgi yarışması: düello, canlı yarış, Akşam Arenası, haftalık lig ve sınav soruları.","offers":{"@type":"Offer","price":"0","priceCurrency":"TRY"},"author":{"@type":"Person","name":"Ayşegül Küçük"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Hadi Bil ücretsiz mi?","acceptedAnswer":{"@type":"Answer","text":"Evet. Hadi Bil’i indirmek ve oynamak ücretsiz; uygulama reklam içerir. İstersen uygulama içinden jeton paketi alabilir ya da reklamsız oynamak, her gün jeton kazanmak ve sınırsız deneme çözmek için Plus’a geçebilirsin. Oyunda gerçek para ya da para değeri olan ödül kazanılmaz."}},{"@type":"Question","name":"Bilgisayardan oynayabilir miyim?","acceptedAnswer":{"@type":"Answer","text":"Evet, hadibilapp.com.tr/oyna adresinden tarayıcıda oynayabilirsin; telefonda ana ekrana da ekleyebilirsin. Webde satın alma yok, jeton ve Plus yalnızca uygulamadan alınır; aldıkların webde de geçerli olur."}},{"@type":"Question","name":"Telefondaki hesabımla webden girebilir miyim?","acceptedAnswer":{"@type":"Answer","text":"Hesabına Google bağlıysan evet: webde “Google ile devam et” ile gir, ilerlemen aynen gelir. Hesabın aynı anda tek cihazda açık kalır; webden girince telefondaki oturumun kapanır. Yalnızca Apple ile girdiysen önce uygulamada Hesap ekranından Google’ı bağla."}},{"@type":"Question","name":"Sınav soruları resmî mi?","acceptedAnswer":{"@type":"Answer","text":"Hayır. Hadi Bil bağımsız bir uygulamadır; ÖSYM, MEB ya da başka bir resmî kurumla bağlantısı yoktur. Sorular sınavların konu ve formatına uygun olarak özgün hazırlanır, her sorunun açıklaması vardır."}},{"@type":"Question","name":"Kaç yaşında oynanır?","acceptedAnswer":{"@type":"Answer","text":"13 yaş ve üstü. 13–17 yaş arasındaki oyuncular için genç modu kendiliğinden açılır: gerçek ad diğer oyunculara gösterilmez, kişiselleştirilmiş reklam gösterilmez ve harcama sınırı uygulanır."}},{"@type":"Question","name":"Plus nedir, nasıl iptal edilir?","acceptedAnswer":{"@type":"Answer","text":"Plus aylık ya da yıllık bir abonelik: reklamsız oyun, her gün jeton, düelloda günde 2 bedava joker, sınırsız deneme ve ders istatistiği. Aylık Plus ilk kez 7 gün ücretsiz denenebilir. İptal için Android’de Google Play › Ödemeler ve abonelikler › Abonelikler’e, iPhone’da Ayarlar › adın › Abonelikler’e git."}},{"@type":"Question","name":"Hesabımı nasıl silerim?","acceptedAnswer":{"@type":"Answer","text":"Uygulamada profil › Hesap ve gizlilik › Hesabımı sil. Uygulamaya giremiyorsan hesap silme sayfasındaki adımları izle. 30 gün içinde vazgeçebilirsin."}},{"@type":"Question","name":"Bir soruda hata buldum, ne yapmalıyım?","acceptedAnswer":{"@type":"Answer","text":"Soru ekranındaki bayrak simgesine dokunup hatayı seç; editörlerimiz bakar ve soruyu düzeltir. İstersen hadibilapp@gmail.com adresine de yazabilirsin."}}]}</script>
+<script>
+(function () {
+  var S = [{"k":"Tarih","s":"Kartacalı hangi komutan filleriyle birlikte Alpler’i aşarak İtalya’ya girmiştir?","c":["Hannibal","Hamilkar","Scipio","Spartaküs"]},{"k":"Tarih","s":"Galata Kulesi’ni 14. yüzyılda inşa edenler kimlerdir?","c":["Cenevizliler","Venedikliler","Osmanlılar","Bizanslılar"]},{"k":"Tarih","s":"Ayasofya ilk olarak hangi amaçla inşa edilmiştir?","c":["Kilise","Saray","Kütüphane","Hamam"]},{"k":"Tarih","s":"Amerika kıtası adını hangi kâşiften almıştır?","c":["Amerigo Vespucci","Kristof Kolomb","Ferdinand Macellan","Vasco da Gama"]},{"k":"Tarih","s":"İtalya’daki Pisa Kulesi neden eğiktir?","c":["Zemininin yumuşak olması","Bilerek eğik tasarlanması","Bir bombardıman","Bir yıldırım düşmesi"]},{"k":"Coğrafya","s":"İstanbul’daki Adalar’ın (Prens Adaları) en büyüğü hangisidir?","c":["Büyükada","Heybeliada","Burgazada","Kınalıada"]},{"k":"Coğrafya","s":"MS 79 yılında Pompeii kentini küller altında bırakan volkan hangisidir?","c":["Vezüv","Etna","Stromboli","Hekla"]},{"k":"Coğrafya","s":"Dünyanın en küçük okyanusu hangisidir?","c":["Arktik Okyanusu","Hint Okyanusu","Güney Okyanusu","Atlas Okyanusu"]},{"k":"Bilim","s":"Halley kuyruklu yıldızı Dünya’dan yaklaşık kaç yılda bir görülür?","c":["76","50","100","120"]},{"k":"Bilim","s":"Yılanlar dillerini sık sık dışarı çıkarıp sallayarak ne yapar?","c":["Havadaki kokuları toplar","Rakiplerini tehdit eder","Vücudunu serinletir","Ses çıkarır"]},{"k":"Bilim","s":"Aşı sayesinde dünyadan tamamen silinen ilk insan hastalığı hangisidir?","c":["Çiçek hastalığı","Çocuk felci","Kızamık","Sıtma"]},{"k":"Bilim","s":"Bronz esas olarak bakırın hangi metalle alaşımıdır?","c":["Kalay","Çinko","Demir","Kurşun"]},{"k":"Edebiyat","s":"İnsan dışındaki varlıklara insan özellikleri yükleme sanatına ne ad verilir?","c":["Teşhis","Tezat","Mübalağa","Tenasüp"]},{"k":"Edebiyat","s":"Türk masalları çoğunlukla gökten kaç elma düştüğü söylenerek biter?","c":["Üç","Bir","İki","Yedi"]},{"k":"Edebiyat","s":"“Winnie the Pooh” kitaplarının yazarı kimdir?","c":["A. A. Milne","Beatrix Potter","Kenneth Grahame","Lewis Carroll"]},{"k":"Spor","s":"Türkiye Kadın Milli Voleybol Takımı hangi lakapla anılır?","c":["Filenin Sultanları","Ay-Yıldızlılar","12 Dev Adam","Bizim Çocuklar"]},{"k":"Spor","s":"Türkiye Kadın Milli Basketbol Takımı hangi lakapla anılır?","c":["Potanın Perileri","Filenin Sultanları","Ay-Yıldızlılar","12 Dev Adam"]},{"k":"Spor","s":"Ayrton Senna üç dünya şampiyonluğunu hangi takımla kazandı?","c":["McLaren","Ferrari","Williams","Lotus"]},{"k":"Sinema & Dizi","s":"Disney’in “Uyuyan Güzel” (1959) filminde prensesin adı nedir?","c":["Aurora","Belle","Jasmine","Ariel"]},{"k":"Sinema & Dizi","s":"“Yüzüklerin Efendisi” üçlemesinde elf okçu Legolas’ı kim canlandırdı?","c":["Orlando Bloom","Elijah Wood","Viggo Mortensen","Dominic Monaghan"]},{"k":"Müzik","s":"“Madama Butterfly” ve “Tosca” operalarının bestecisi kimdir?","c":["Puccini","Verdi","Mozart","Bizet"]},{"k":"Müzik","s":"Müzikte “presto” tempo terimi ne anlama gelir?","c":["Çok hızlı","Ağır","Orta hızda","Giderek yavaşlayarak"]},{"k":"Teknoloji","s":"“Google” adı hangi matematiksel terimden esinlenilerek konmuştur?","c":["Googol","Gigabit","Logaritma","Algoritma"]},{"k":"Teknoloji","s":"“GPU” kısaltması neyin karşılığıdır?","c":["Grafik İşlem Birimi","Genel Program Birimi","Küresel Güç Ünitesi","Grafik Pil Ünitesi"]}];
+  // Türkiye günü: her gün başka bir sorudan başlar
+  var gun = Math.floor((Date.now() + 3 * 3600e3) / 864e5), i = gun % S.length, kalan = 20, t = 0, bitti = false;
+  var $ = function (id) { return document.getElementById(id); };
+  var KAT = { 'Sinema & Dizi': 'SİNEMA VE DİZİ' };
+  function karistir(q) { var c = q.c.map(function (x, j) { return { t: x, d: j === 0 }; }); var r = (gun * 31 + i * 7) % 4; return c.slice(r).concat(c.slice(0, r)); }
+  function halka() { $('s-sure').textContent = kalan; $('s-halka').setAttribute('stroke-dashoffset', String(138.2 * (1 - kalan / 20))); $('s-halka').setAttribute('stroke', kalan <= 5 ? '#E5484D' : '#FF8A3D'); }
+  function bitir(sec) {
+    if (bitti) return; bitti = true; clearInterval(t);
+    var bs = $('s-siklar').querySelectorAll('.sik'), dogru = '';
+    for (var j = 0; j < bs.length; j++) { bs[j].disabled = true; if (bs[j].dataset.d === '1') { bs[j].classList.add('dogru'); dogru = bs[j].querySelector('span').textContent; } }
+    if (sec && sec.dataset.d !== '1') sec.classList.add('yanlis');
+    $('s-not').textContent = !sec ? 'Süre doldu. Doğru cevap: ' + dogru + '.' : sec.dataset.d === '1' ? 'Doğru! Uygulamada her maçta 10 soru var ve rakibin de aynı soruları çözüyor.' : 'Olmadı. Doğru cevap: ' + dogru + '.';
+    $('s-sonuc').classList.add('acik');
+  }
+  function goster() {
+    var q = S[i % S.length]; bitti = false; kalan = 20; clearInterval(t);
+    $('s-kat').textContent = (KAT[q.k] || q.k).toLocaleUpperCase('tr-TR'); $('s-metin').textContent = q.s; $('s-sonuc').classList.remove('acik');
+    var kap = $('s-siklar'); kap.innerHTML = '';
+    karistir(q).forEach(function (x, j) { var b = document.createElement('button'); b.type = 'button'; b.className = 'sik'; b.dataset.d = x.d ? '1' : '0'; b.innerHTML = '<i>' + 'ABCD'[j] + '</i><span></span>'; b.querySelector('span').textContent = x.t; b.onclick = function () { bitir(b); }; kap.appendChild(b); });
+    halka();
+    // Süre kart ekrandayken işler (sayfayı aşağı kaydıran beklemeden kaybetmesin)
+    t = setInterval(function () { if (document.hidden || !gorunur) return; kalan--; halka(); if (kalan <= 0) bitir(null); }, 1000);
+  }
+  var gorunur = true;
+  try { new IntersectionObserver(function (e) { gorunur = e[0].isIntersecting; }).observe($('soru')); } catch (e) {}
+  $('s-yeni').onclick = function () { i++; goster(); };
+  goster();
+  // Akşam Arenasına kalan süre (Türkiye saati 20:00)
+  var ag = $('arena-geri');
+  function arena() {
+    var s = Date.now() + 3 * 3600e3, g = new Date(s), h = Date.UTC(g.getUTCFullYear(), g.getUTCMonth(), g.getUTCDate(), 20) - s;
+    if (h < -15 * 60e3) h += 864e5;
+    if (h <= 0) { ag.textContent = 'Arena şu an açık'; return; }
+    var sa = Math.floor(h / 3600e3), dk = Math.floor(h % 3600e3 / 60e3);
+    ag.textContent = 'Bugünkü Arenaya ' + (sa ? sa + ' sa ' : '') + dk + ' dk';
+  }
+  arena(); setInterval(arena, 30000);
+})();
+</script>
+</body></html>

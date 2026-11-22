@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://hadibilapp.com.tr/sitemap.xml

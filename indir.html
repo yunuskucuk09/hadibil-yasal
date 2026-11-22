@@ -1,50 +1,70 @@
 <!doctype html>
 <html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Hadi Bil’i indir · Hadi Bil</title>
-<style>
-:root{--bg:#F4F2FB;--kart:#FFFFFF;--yazi:#16123A;--soluk:#5E5A7A;--ana:#5B3DF5;--cizgi:#E7E4F2}
-@media (prefers-color-scheme: dark){:root{--bg:#120E30;--kart:#1C1745;--yazi:#F4F2FB;--soluk:#C9C4E8;--ana:#A897FF;--cizgi:#2E2860}}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--yazi);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
-main{max-width:760px;margin:0 auto;padding:24px 16px 64px}header{display:flex;align-items:center;gap:10px;margin-bottom:8px}
-.logo{width:36px;height:36px;border-radius:10px;background:#5B3DF5;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800}
-nav{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 20px}nav a{padding:6px 12px;border-radius:999px;background:var(--kart);border:1px solid var(--cizgi);color:var(--yazi);text-decoration:none;font-size:14px;font-weight:600}
-h1{font-size:28px;line-height:1.2;margin:8px 0}h2{font-size:19px;margin:28px 0 6px}p{margin:6px 0}.not{color:var(--soluk);font-size:14px}
-.kart{background:var(--kart);border:1px solid var(--cizgi);border-radius:16px;padding:16px 18px;margin:14px 0}a{color:var(--ana)}
-ol li{margin:6px 0}.kart h2{margin-top:2px}
-</style></head><body><main>
-<header><div class="logo">?</div><strong>Hadi Bil</strong></header>
-<nav><a href="./">Ana sayfa</a><a href="gizlilik.html">Gizlilik</a><a href="kosullar.html">Kullanım Koşulları</a><a href="acik-riza.html">Açık Rıza</a><a href="hesap-silme.html">Hesap silme</a></nav>
-<h1>Hadi Bil’i indir</h1>
-<div class="kart"><p>Bilgi yarışması: düellolar, ligler, sınav soruları. Ücretsiz.</p>
+<title>Hadi Bil’i indir</title>
+<meta name="description" content="Hadi Bil’i Google Play ya da App Store’dan indir, ya da hemen webde oyna. Ücretsiz bilgi yarışması.">
+<link rel="canonical" href="https://hadibilapp.com.tr/indir.html">
+<meta name="theme-color" content="#16123A">
+<link rel="icon" type="image/png" sizes="192x192" href="ikon-192.png"><link rel="apple-touch-icon" href="ikon-180.png">
+<meta property="og:type" content="website"><meta property="og:locale" content="tr_TR"><meta property="og:site_name" content="Hadi Bil">
+<meta property="og:title" content="Hadi Bil’i indir"><meta property="og:description" content="Hadi Bil’i Google Play ya da App Store’dan indir, ya da hemen webde oyna. Ücretsiz bilgi yarışması.">
+<meta property="og:url" content="https://hadibilapp.com.tr/indir.html"><meta property="og:image" content="https://hadibilapp.com.tr/og.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://hadibilapp.com.tr/og.png">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap">
+<link rel="stylesheet" href="site.css">
+
+</head><body>
+<a class="atla" href="#icerik">İçeriğe geç</a>
+<header class="ust"><div class="sar">
+<a class="marka" href="./"><img src="ikon-192.png" alt="" width="38" height="38">hadi bil</a>
+<nav aria-label="Site"><a href="/#modlar">Modlar</a><a href="/#sinavlar">Sınavlar</a><a href="/#sss">SSS</a><a href="/#destek">Destek</a><a class="oyna" href="oyna/">Webde oyna</a></nav>
+</div></header>
+<main id="icerik">
+<div class="indir">
+<img class="ikon" src="ikon-192.png" alt="" width="96" height="96">
+<h1>Hadi Bil’e katıl</h1>
+<p class="ac">Ücretsiz bilgi yarışması: düello, canlı yarış, her akşam Arena ve 20’den fazla sınavın soruları.</p>
 <p id="davet" class="not" hidden></p>
-<p id="oda" hidden style="margin-top:10px"><strong>Oda kodu: <span id="odakod"></span></strong><br><a id="ac" href="#" style="display:inline-block;margin-top:10px;padding:12px 18px;border-radius:12px;background:#FF8A3D;color:#16123A;text-decoration:none;font-weight:800">Uygulamada odayı aç</a><br><span class="not">Uygulama yüklü değilse önce indir; açınca Özel oda › Odaya katıl’a bu kodu yaz.</span></p>
-<p id="grup" hidden style="margin-top:10px"><strong>Grup kodu: <span id="grupkod"></span></strong><br><a id="gac" href="#" style="display:inline-block;margin-top:10px;padding:12px 18px;border-radius:12px;background:#FF8A3D;color:#16123A;text-decoration:none;font-weight:800">Uygulamada gruba katıl</a><br><span class="not">Uygulama yüklü değilse önce indir; Android’de kurunca gruba kendiliğinden katılırsın, iPhone’da Grup › Davet koduyla katıl’a bu kodu yaz.</span></p>
-<p style="display:flex;flex-wrap:wrap;gap:10px;margin-top:14px">
-<a id="play" href="https://play.google.com/store/apps/details?id=app.hadibil" style="padding:12px 18px;border-radius:12px;background:#16123A;color:#fff;text-decoration:none;font-weight:700">Google Play’den indir</a>
-<a id="ios" href="#" style="padding:12px 18px;border-radius:12px;background:#5B3DF5;color:#fff;text-decoration:none;font-weight:700">iPhone · yakında</a>
-</p></div>
+<div id="oda" class="davet-kutu" hidden><strong>Özel oda davetin var</strong><div class="kod" id="odakod"></div><a id="ac" class="dug dug-ana" href="#">Uygulamada odayı aç</a><p class="not" style="margin:10px 0 0">Uygulama yüklü değilse önce indir; açınca Özel oda › Odaya katıl’a bu kodu yaz. Bilgisayardaysan “Webde oyna” ile hemen katıl.</p></div>
+<div id="grup" class="davet-kutu" hidden><strong>Grup davetin var</strong><div class="kod" id="grupkod"></div><a id="gac" class="dug dug-ana" href="#">Uygulamada gruba katıl</a><p class="not" style="margin:10px 0 0">Uygulama yüklü değilse önce indir; Android’de kurunca gruba kendiliğinden katılırsın, iPhone’da Grup › Davet koduyla katıl’a bu kodu yaz.</p></div>
+<div class="dugmeler">
+<a class="dug dug-ana" id="web" href="oyna/">Webde oyna</a>
+<a class="dug dug-koyu" id="play" href="https://play.google.com/store/apps/details?id=app.hadibil"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path fill="#34A853" d="M3.6 2.3 13.4 12l-9.8 9.7c-.4-.2-.6-.6-.6-1.1V3.4c0-.5.2-.9.6-1.1z"/><path fill="#FBBC04" d="m16.7 8.7-3.3 3.3 3.3 3.3 3.8-2.1c1.1-.6 1.1-1.8 0-2.4z"/><path fill="#4285F4" d="M3.6 2.3c.3-.2.8-.2 1.2 0l11.9 6.4-3.3 3.3z"/><path fill="#EA4335" d="M13.4 12l3.3 3.3-11.9 6.4c-.4.2-.9.2-1.2 0z"/></svg><span class="iki"><small>İndir</small>Google Play</span></a>
+<a class="dug dug-koyu" id="ios" href="#" aria-disabled="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M16.4 12.6c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.9-3.5.9-.7 0-1.8-.8-3-.8-1.6 0-3 .9-3.8 2.3-1.6 2.8-.4 6.9 1.2 9.1.8 1.1 1.7 2.3 2.9 2.3 1.2 0 1.6-.7 3-.7s1.8.7 3 .7c1.3 0 2.1-1.1 2.8-2.2.9-1.3 1.3-2.5 1.3-2.6-.1 0-2.5-.9-2.5-3.7zM14.2 5.8c.6-.8 1.1-1.8 1-2.8-.9 0-2 .6-2.7 1.4-.6.7-1.1 1.7-1 2.7 1 .1 2-.5 2.7-1.3z"/></svg><span class="iki"><small>Çok yakında</small>App Store</span></a>
+</div>
+</div></main>
+<footer class="alt-bilgi"><div class="sar">
+<div><a class="marka" href="./" style="margin-bottom:14px"><img src="ikon-192.png" alt="" width="38" height="38">hadi bil</a>
+<p style="margin:0;max-width:30em">Arkadaşlarınla ve Türkiye’nin dört bir yanından oyuncularla bilgi yarıştırdığın ücretsiz oyun. Hadi Bil’i Ayşegül Küçük geliştiriyor.</p></div>
+<div><h3>Oyun</h3><ul><li><a href="oyna/">Webde oyna</a></li><li><a href="https://play.google.com/store/apps/details?id=app.hadibil">Google Play</a></li><li><a href="./#destek">Destek</a></li><li><a href="mailto:hadibilapp@gmail.com">hadibilapp@gmail.com</a></li></ul>
+<h3 style="margin-top:22px">Bizi takip et</h3><ul><li><a href="https://www.instagram.com/hadibilapp">Instagram</a></li><li><a href="https://www.tiktok.com/@hadibilapp">TikTok</a></li><li><a href="https://www.youtube.com/@hadibilapp">YouTube</a></li></ul></div>
+<div><h3>Yasal</h3><ul><li><a href="gizlilik.html">Gizlilik ve KVKK</a></li><li><a href="kosullar.html">Kullanım Koşulları</a></li><li><a href="acik-riza.html">Açık Rıza Metni</a></li><li><a href="hesap-silme.html">Hesap ve veri silme</a></li></ul></div>
+<p class="kucuk">Hadi Bil bağımsız bir uygulamadır; ÖSYM, MEB ya da başka bir resmî kurumla bağlantısı yoktur. Sorular sınav formatında özgün olarak hazırlanmıştır. © 2026 Hadi Bil</p>
+</div></footer>
 <script>
 (function () {
   var PLAY = "https://play.google.com/store/apps/details?id=app.hadibil", IOS = "";
-  var k = ''; try { k = (new URLSearchParams(location.search).get('davet') || '').toLowerCase(); } catch (e) {}
-  if (!/^[a-z0-9._]{3,15}$/.test(k)) k = '';
+  var Q = new URLSearchParams(location.search);
+  var k = (Q.get('davet') || '').toLowerCase(); if (!/^[a-z0-9._]{3,15}$/.test(k)) k = '';
   // Sosyal medya bağlantıları kaynak taşır (?k=instagram): Play'e referrer olarak geçer, uygulama kimliksiz sayar
-  var kay = ''; try { kay = (new URLSearchParams(location.search).get('k') || '').toLowerCase(); } catch (e) {}
-  if (!/^[a-z_]{2,24}$/.test(kay)) kay = '';
+  var kay = (Q.get('k') || '').toLowerCase(); if (!/^[a-z_]{2,24}$/.test(kay)) kay = '';
   // Grup daveti (?grup=HB-1234): kod Play kurulum bilgisine de yazılır, Android'de kurup hesap açınca gruba kendiliğinden katılınır
-  var grup = ''; try { grup = (new URLSearchParams(location.search).get('grup') || '').trim(); } catch (e) {}
-  if (!/^[A-Z0-9ÇĞİÖŞÜ]{1,5}-?[0-9]{4}$/.test(grup)) grup = '';
+  var grup = (Q.get('grup') || '').trim(); if (!/^[A-Z0-9ÇĞİÖŞÜ]{1,5}-?[0-9]{4}$/.test(grup)) grup = '';
+  var oda = (Q.get('oda') || '').toUpperCase(); if (!/^[A-Z]{3}-[0-9]{2}$/.test(oda)) oda = '';
   var ref = [k ? 'davet=' + k : '', kay ? 'kaynak=' + kay : '', grup ? 'grup=' + encodeURIComponent(grup) : ''].filter(Boolean).join('&');
   var play = ref ? PLAY + '&referrer=' + encodeURIComponent(ref) : PLAY;
   if (kay && IOS) IOS += (IOS.indexOf('?') < 0 ? '?' : '&') + 'ct=' + kay;
   document.getElementById('play').href = play;
+  // Webde oyna: oda, grup ve davet bilgisi web sürümüne geçer
+  var wq = [oda ? 'oda=' + oda : '', grup ? 'grup=' + encodeURIComponent(grup) : '', k ? 'davet=' + k : ''].filter(Boolean).join('&');
+  document.getElementById('web').href = 'oyna/' + (wq ? '?' + wq : '');
   var ua = navigator.userAgent || '', ios = /iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && 'ontouchend' in document);
-  if (k) { var d = document.getElementById('davet'); d.hidden = false; d.textContent = 'Davet eden: ' + k + (ios ? ' · uygulamayı kurunca Arkadaşlar ekranındaki “Seni biri mi davet etti?” bölümüne bu adı yaz.' : ''); }
-  if (!IOS) { var b = document.getElementById('ios'); b.removeAttribute('href'); b.style.opacity = '0.6'; }
+  if (k) { var d = document.getElementById('davet'); d.hidden = false; d.textContent = 'Seni @' + k + ' davet etti.' + (ios ? ' Uygulamayı kurunca Arkadaşlar ekranındaki “Seni biri mi davet etti?” bölümüne bu adı yaz.' : ''); }
+  if (!IOS) { var b = document.getElementById('ios'); b.removeAttribute('href'); }
+  else document.getElementById('ios').href = IOS;
   // Özel oda daveti (?oda=KBR-42): uygulama yüklüyse doğrudan odayı açar; Android'de yüklü değilse Play'e düşer, iPhone'da kısa bir
   // beklemeden sonra App Store'a gider (uygulama açıldıysa sayfa arka plana geçtiği için gitmez)
-  var oda = ''; try { oda = (new URLSearchParams(location.search).get('oda') || '').toUpperCase(); } catch (e) {}
-  if (!/^[A-Z]{3}-[0-9]{2}$/.test(oda)) oda = '';
   if (oda) {
     var uyg = 'hadibil://oda/' + oda;
     document.getElementById('oda').hidden = false; document.getElementById('odakod').textContent = oda; document.getElementById('ac').href = uyg;
@@ -63,5 +83,4 @@ ol li{margin:6px 0}.kart h2{margin-top:2px}
   else if (ios && IOS) location.replace(IOS);
 })();
 </script>
-<p class="not">Sürüm 2.2 · Son güncelleme: 21 Kasım 2026</p>
-</main></body></html>
+</body></html>
