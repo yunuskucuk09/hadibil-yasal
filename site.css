@@ -9,6 +9,8 @@ img{max-width:100%;display:block}
 :focus-visible{outline:3px solid var(--sari);outline-offset:3px;border-radius:6px}
 .atla{position:absolute;left:-999px;top:8px;background:var(--sari);color:var(--gece);padding:8px 14px;border-radius:10px;font-weight:800;z-index:10}
 .atla:focus{left:12px}
+.tanitim video{display:block;width:100%;max-width:880px;height:auto;aspect-ratio:16/9;margin:8px 0 0;border-radius:20px;background:#2B1F8F;box-shadow:0 20px 50px -24px rgba(43,31,143,.55)}
+.tanitim .ac{margin-top:14px}
 .sar{max-width:1120px;margin:0 auto;padding:0 20px}
 /* Üst çubuk */
 .ust{background:var(--gece);color:#fff;position:sticky;top:0;z-index:5;border-bottom:1px solid rgba(255,255,255,.08)}
